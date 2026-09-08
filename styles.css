@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+#about-me {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about-me h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#projects {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+#projects article {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#projects article h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#projects figure {
+    margin: 0;
+    text-align: center;
+}
+
+#projects img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+#projects figcaption {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+}
+
+#projects article p {
+    max-width: 700px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 17px;
+}
+
+#skills {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#skills li {
+    background-color: white;
+    padding: 14px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#skills li::before {
+    content: "✓";
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#contact {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 20px 90px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#contact textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+#contact button {
+    display: block;
+    padding: 12px 25px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #444;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    #menu-button {
+        display: block;
+        margin: 0 auto 15px;
+        padding: 5px 10px;
+        font-size: 25px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #about-me {
+        padding: 60px 20px;
+    }
+
+    #about-me h2,
+    #projects h2,
+    #skills h2,
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #projects {
+        padding: 60px 20px;
+    }
+
+    #projects article {
+        padding: 20px;
+    }
+
+    #projects article h3 {
+        font-size: 21px;
+    }
+
+    #skills {
+        padding: 60px 20px;
+    }
+
+    #contact {
+        padding: 60px 20px 70px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #about-me p {
+        font-size: 16px;
+    }
+
+    #projects article p {
+        font-size: 16px;
+    }
+
+    #skills li {
+        font-size: 16px;
+    }
+}
